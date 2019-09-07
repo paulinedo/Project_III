@@ -116,6 +116,10 @@ a {
   
 }
 
+.mobile-show {
+  display: none;
+}
+
 /* Sweep To Right */
 .hvr-sweep-to-right1 {
   display: inline-block;
@@ -394,7 +398,28 @@ a {
       grid-template-areas: 
       "subTitle" "mainContent"
     }
+
+    .share-buttons {
+      width: 20%;
+    }
+
+    .share-buttons .download {
+      width: 80px;
+      height: 15px;
+    }
+
+    .share-buttons .share {
+      width: 80px;
+      height: 11px;
+    }
   
+    .mobile-hidden {
+      display: none;
+    }
+
+    .mobile-show {
+      display: inherit;
+    }
   }
 
    /* Slideshow container */
