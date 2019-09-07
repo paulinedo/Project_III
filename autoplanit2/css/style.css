@@ -4,9 +4,10 @@ body {
 
 .grid {
     display: grid;
-    grid-template-rows:1fr 1/2fr 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1/2fr 1fr 1fr 1fr;
     grid-template-columns:1fr 1fr;
     grid-template-areas:
+    "nav nav"
     "header header"
     "heroImg heroImg"
     "leftContent leftContent"
@@ -62,6 +63,7 @@ h5 {
 }
 
 .nav {
+  grid-area: nav;
   position: sticky;
   z-index: 1;
   top: 0;
@@ -359,9 +361,10 @@ a {
   @media only screen and (max-width: 600px) {
     .grid {
         display: grid;
-        grid-template-rows:1fr 1/2fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1/2fr 1fr 1fr 1fr 1fr;
         grid-template-columns:1fr;
         grid-template-areas:
+        "nav"
         "header"
         "heroImg"
         "leftContent "
